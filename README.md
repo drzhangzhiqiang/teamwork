@@ -17,9 +17,6 @@ git clone https://github.com/IStevant/SupportingCRE.git
 Install the Conda SupportingCRE environment
 ```
 cd SupportingCRE
-
-conda env create -f conda_env/SupportingCRE_env.yml
-```
 source ~/miniconda3/etc/profile.d/conda.sh
 conda env create -f conda_env/SupportingCRE_env.yml
 ```
