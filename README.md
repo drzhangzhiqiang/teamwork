@@ -15,12 +15,30 @@ sh Miniconda3-latest-Linux-x86_64.sh
 ```
 source miniconda3/etc/profile.d/conda.sh
 
-
-
+```
+## create conda enviroment
+```
+conda create -n r_env r-base=4.3.2 -c conda-forge
+```
 ```
 
-```
-conda create -n r_env_4.5.1 r-base=4.5.1
+# 安装jupyterlab
+conda install -c conda-forge jupyterlab
+#打开R
+R
+
+#在R中安装jupyter kernel
+install.packages('IRkernel')
+IRkernel::installspec(name = "r_env",displayname = "R(r_env)")
+
+#退出R
+q()
+
+# 启动Jupyterlab
+jupyter lab
+# 会被问，敲y就好
+#Proceed ([y]/n)? 
+y
 
 ```
 
